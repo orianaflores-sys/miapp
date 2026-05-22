@@ -20,7 +20,7 @@ export default function Login() {
     setError("");
 
     // LLAMA AL SERVICIO login() Y ESPERA LA RESPUESTA
-    const response = await login(usuario, password, false);
+    const response = await login(usuario, password);
 
     if (response.success && response.user)
     {
